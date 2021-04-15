@@ -314,8 +314,8 @@
   
   .description {
     position: fixed;
-    top: 40%;
-    right: 20%;
+    bottom: 42%;
+    right: 21%;
     z-index: 4;
     width: 200px;
   }
@@ -450,10 +450,6 @@
     width: 250px;
   }
 
-  .greengif {
-    height: 150px;
-    width: 150px;
-  }
   
   .hidden {
     display: none !important;
