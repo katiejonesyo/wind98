@@ -26,6 +26,7 @@
     right: 0%;
     top: 2%;
     padding-right: 15px;
+  border: none;
   }
 
   .icons,
@@ -447,6 +448,11 @@
   .headshot {
     height: 375px;
     width: 250px;
+  }
+
+  .greengif {
+    height: 150px;
+    width: 150px;
   }
   
   .hidden {
