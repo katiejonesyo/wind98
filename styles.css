@@ -238,9 +238,10 @@
   
   .window_two {
     position: fixed;
-    top: 45%;
+    top: 40%;
     left: 14.5%;
     cursor: default;
+
   }
   
   .window .top {
@@ -450,8 +451,8 @@
   }
 
   .headshot {
-    height: 375px;
-    width: 250px;
+    height: 325px;
+    width: 220px;
   }
 
   
@@ -480,7 +481,9 @@
   @media only screen and (max-width: 500px) {
     .window_two,
     .note_two {
-      display: none;
+      top: 50%;
+      right: 10%;
+
     }
   
     .window_one {
