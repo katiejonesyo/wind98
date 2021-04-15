@@ -20,6 +20,19 @@
     text-decoration: underline;
   }
   
+  /* .audio {
+    float: right;
+    position: fixed;
+    right: 2%;
+    top: 2%;
+    height: 25px;
+    width: 300px;
+  }
+
+  audio::-webkit-media-controls-panel {
+    background-color: rgb(192, 192, 192);
+} */
+
   .icons,
   .note_one,
   .note_two {
@@ -305,8 +318,8 @@
   
   .description {
     position: fixed;
-    top: 40%;
-    right: 20%;
+    bottom: 42%;
+    right: 21%;
     z-index: 4;
     width: 200px;
   }
@@ -437,9 +450,10 @@
   }
 
   .headshot {
-    height: 300px;
-    width: 200px;
+    height: 375px;
+    width: 250px;
   }
+
   
   .hidden {
     display: none !important;
