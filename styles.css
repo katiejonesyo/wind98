@@ -20,6 +20,14 @@
     text-decoration: underline;
   }
   
+  .audio {
+    float: right;
+    position: fixed;
+    right: 0%;
+    top: 2%;
+    padding-right: 15px;
+  }
+
   .icons,
   .note_one,
   .note_two {
