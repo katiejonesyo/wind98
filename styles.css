@@ -4,7 +4,7 @@
   }
   
   body {
-    background: url("https://thumbs.gfycat.com/EntireLateAidi-size_restricted.gif") repeat fixed;
+    background: url("src/icons/windowsbg.jpeg") repeat fixed;
     background-color: #008080;
     background-size: cover;
     margin: 0;
@@ -64,6 +64,7 @@
   .window .top,
   .window .middle,
   .window .bottom,
+  .description .hidden,
   .description .top,
   .description .ok_button,
   .description .bottom {
@@ -452,8 +453,8 @@
   }
 
   .headshot {
-    height: 325px;
-    width: 220px;
+    height: 350px;
+    width: 345px;
   }
 
   
