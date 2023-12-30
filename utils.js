@@ -4,11 +4,14 @@ const start_menu = ".start_menu";
 const clock = "#showClock";
 const window_one = ".window_one";
 const window_two = ".window_two";
+const window_three = ".window_three";
 const explorer = ".description";
 const note_one = ".note_one";
 const note_two = ".note_two";
+const note_three = ".note_three"
 const window_one_x = ".window_one .x";
 const window_two_x = ".window_two .x";
+const window_three_x = ".window_three .x";
 const explorer_x = ".description .x";
 const computer = ".computer";
 const contact = ".contact";
@@ -19,8 +22,10 @@ const twitter = ".recycle";
 export const elemArray = [
   window_one,
   window_two,
+  window_three,
   note_one,
   note_two,
+  note_three,
   explorer,
   contact,
   computer,
@@ -58,6 +63,10 @@ export const toggleHidden = () => {
     $(window_two).toggleClass("hidden");
   });
 
+  $(window_three_x).on("click tap", () => {
+    $(window_three).toggleClass("hidden");
+  });
+
   $(explorer_x).on("click tap", () => {
     $(explorer).toggleClass("hidden");
   });
@@ -73,6 +82,15 @@ export const toggleHidden = () => {
   $(note_two).on("click tap", () => {
     if ($(window_two).hasClass("hidden")) {
       $(window_two).toggleClass("hidden");
+
+      helpCursor();
+    }
+  });
+
+
+  $(note_three).on("click tap", () => {
+    if ($(window_three).hasClass("hidden")) {
+      $(window_three).toggleClass("hidden");
 
       helpCursor();
     }

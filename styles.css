@@ -35,7 +35,8 @@
 
   .icons,
   .note_one,
-  .note_two {
+  .note_two,
+  .note_three {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -106,7 +107,8 @@
   }
   
   .note_one,
-  .note_two {
+  .note_two,
+  .note_three {
     width: 70px;
   }
   
@@ -121,6 +123,12 @@
     right: 19%;
     top: 35%;
   }
+
+  .note_three {
+    position: fixed;
+    left: 7%;
+    top: 2.5%;
+  }
   
   .notepad_one,
   .notepad_two {
@@ -128,6 +136,20 @@
     width: 32px;
     background-image: url("src/icons/notepad.png");
     margin: auto;
+  }
+
+  .notepad_three {
+    height: 32px;
+    width: 32px;
+    background-image: url("src/icons/directory_open_cabinet_fc-2.png");
+    margin: auto;
+  }
+
+  .project_folders {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5%;
+    padding-bottom: 5%;
   }
   
   .start_bar .start_button .logo {
@@ -240,10 +262,16 @@
   
   .window_two {
     position: fixed;
-    top: 40%;
+    top: 37%;
+    left: 60%;
+    cursor: default;
+  }
+
+  .window_three {
+    position: fixed;
+    top: 30%;
     left: 14.5%;
     cursor: default;
-
   }
   
   .window .top {
@@ -483,6 +511,13 @@
   @media only screen and (max-width: 500px) {
     .window_two,
     .note_two {
+      top: 50%;
+      right: 10%;
+
+    }
+
+    .window_three,
+    .note_three {
       top: 50%;
       right: 10%;
 
