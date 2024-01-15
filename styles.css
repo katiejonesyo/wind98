@@ -544,3 +544,20 @@
     }
   }
   
+  .password-form, .authenticated-content {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.password-form label {
+    margin-right: 10px;
+}
+
+.password-form input {
+    padding: 5px;
+}
+
+.password-form button {
+    padding: 5px 10px;
+    cursor: pointer;
+}

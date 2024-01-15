@@ -15,6 +15,14 @@
   
   </head>
   <body>
+    <div class="password-form" id="password-form">
+      <label for="password">Enter Password:</label>
+      <input type="password" name="password" id="password" />
+      <button id="submitBtn">Submit</button>
+  </div>
+
+  <div class="authenticated-content" id="authenticated-content" style="display:none;">
+      <!-- Protected content -->
     <div class="wrapper">
       <div class="icons">
         <a href="/" class="computer">
@@ -55,7 +63,7 @@
           <div class="top"></div>
           <div class="middle">
             <center>
-              <div class="resume">Check the recycle bin for a surprise.
+              <div class="resume">You have some items in your recycle bin.
               </div>
               <div class="ok_button"></div>
             </center>
@@ -72,10 +80,10 @@
           </div>
           <div class="middle">
             <div>
-              Hi, I'm Katie! UI/UX Designer and Full Stack Software Engineer.
-              I specialize in building and designing exceptional websites, applications, and
-              everything in between.
-            
+              Hi, I'm Katie! I work as a UI/UX Designer and Full Stack Software Engineer. I'm passionate about understanding people and making products that enhance life. My expertise lies in creating outstanding websites, applications, and more.
+            </br>
+            </br>
+              Check out the projects folder to view some examples of what I've been up to.
             </div>
           </div>
           <div class="bottom"></div>
@@ -171,7 +179,10 @@
         </div>
       </div>
     </div>
+  </div>
     <!-- <script async defer src="https://drive.google.com/file/d/1_ubF6x1XSzfBYZSOdY4xTzJCOeYQHdWq/view?usp=sharing"></script> -->
+    <script type="module" src="./authentication.js"></script>
     <script type="module" src="./app.js"></script>
+    <script type="module" src="./utils.js"></script>
   </body>
 </html>
