@@ -5,13 +5,16 @@ const clock = "#showClock";
 const window_one = ".window_one";
 const window_two = ".window_two";
 const window_three = ".window_three";
+const window_four = ".window_four";
 const explorer = ".description";
 const note_one = ".note_one";
 const note_two = ".note_two";
 const note_three = ".note_three"
+const note_four = ".note_four"
 const window_one_x = ".window_one .x";
 const window_two_x = ".window_two .x";
 const window_three_x = ".window_three .x";
+const window_four_x = ".window_four .x";
 const explorer_x = ".description .x";
 const computer = ".computer";
 const contact = ".contact";
@@ -23,9 +26,11 @@ export const elemArray = [
   window_one,
   window_two,
   window_three,
+  window_four,
   note_one,
   note_two,
   note_three,
+  note_four,
   explorer,
   contact,
   computer,
@@ -67,6 +72,10 @@ export const toggleHidden = () => {
     $(window_three).toggleClass("hidden");
   });
 
+
+  $(window_four_x).on("click tap", () => {
+    $(window_four).toggleClass("hidden");
+  });
   $(explorer_x).on("click tap", () => {
     $(explorer).toggleClass("hidden");
   });
@@ -91,6 +100,14 @@ export const toggleHidden = () => {
   $(note_three).on("click tap", () => {
     if ($(window_three).hasClass("hidden")) {
       $(window_three).toggleClass("hidden");
+
+      helpCursor();
+    }
+  });
+
+  $(note_four).on("click tap", () => {
+    if ($(window_four).hasClass("hidden")) {
+      $(window_four).toggleClass("hidden");
 
       helpCursor();
     }
@@ -157,4 +174,3 @@ export const scoutLoader = () => {
     });
   }
 };
-
