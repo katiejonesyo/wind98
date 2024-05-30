@@ -2,6 +2,16 @@
   margin: 0;
   padding: 0;
 }
+
+body.details {
+  background: url("src/photos/Screenshot\ 2024-05-23\ at\ 8.49.41\ PM.png") repeat fixed;
+  background-color: #008080 !important;
+}
+
+body.ui {
+  background: url("src/photos/Screenshot\ 2024-05-23\ at\ 8.49.41\ PM.png") repeat fixed;
+  background-color: #008080 !important;
+}
   
 body {
   background: url("src/icons/windowsbg.jpeg") repeat fixed;
@@ -9,7 +19,7 @@ body {
   background-size: cover;
   margin: 0;
   font: normal 13px/1.3;
-  overflow: hidden;
+  overflow: hidden;  /* Ensures the body itself doesn't scroll */
 }
 
 a {
@@ -98,12 +108,6 @@ a:hover {
   margin: auto;
 }
 
-.about {
-  text-align: center;
-  padding: 5px;
-  overflow-y: scroll;
-}
-
 .note_one,
 .note_two,
 .note_three {
@@ -133,7 +137,6 @@ a:hover {
   left: 2.20%;
   top: 52%;
 }
-
 
 .notepad_one,
 .notepad_two {
@@ -245,6 +248,95 @@ div.tags {
   height: 22px;
 }
 
+/* Styling for the media details window */
+.window.media-details {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  position: relative;
+}
+
+.window.media-details .x {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+
+.window.media-details .top,
+.window.media-details .bottom {
+  padding: 5px;
+  background-color: #f0f0f0;
+}
+
+.window.media-details .middle {
+  padding: 10px;
+  background-color: #fff;
+}
+
+.media-list {
+  list-style-type: none;
+}
+
+/* Button styling */
+.media-link-button {
+  background: none;
+  border: none;
+  color: blue;
+  cursor: pointer;
+  padding: 5px;
+  text-align: left;
+}
+
+.media-link-button:hover {
+  text-decoration: underline;
+}
+
+.ui-details {
+  background: url(./src/photos/window-png.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 74.9vh;
+  width: 80vw;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  overflow-y: auto; /* Ensures content is scrollable */
+  padding: 20px; /* Adds padding inside the container */
+  box-sizing: border-box; /* Includes padding in width calculation */
+  display: flex; /* Added to center the ui-list vertically and horizontally */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+}
+
+.ui-list {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(40%, 1fr)); /* Responsive columns that adjust number based on available space */
+  gap: 50px;
+  padding: 0;
+  margin: 0;
+  width: 80%; /* 25% smaller in width relative to its parent */
+  height: 75%; /* 25% smaller in height relative to its parent */
+  overflow-y: auto; /* Allows scrolling within the list if content overflows */
+}
+
+.ui-list img {
+  width: 100%; /* Responsive width */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.ui-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+
 .icon_label {
   padding-top: 6px;
   display: flex;
@@ -286,7 +378,7 @@ img.full_image {
 .window,
 .window_one {
   width: 480px;
-  max-width: 480px;
+  max-width: 800px;
   position: fixed;
   top: 4%;
   left: 33.5%;
@@ -399,7 +491,7 @@ div.tags {
   background: url("//static.tumblr.com/fpdiq1j/leqm4f39j/description_middle.png")
     repeat-y;
   padding: 5px;
-  max-width: 190px;
+  max-width: 800px;
   font-size: 11px;
 }
 
@@ -525,10 +617,10 @@ div.tags {
   width: 345px;
 }
 
-
 .hidden {
   display: none !important;
 }
+
 
 .loading {
   cursor: url("src/w98busy.cur"), help;
@@ -554,49 +646,71 @@ div.tags {
 }
 
 
-  @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
 
-    .window_one {
-      top: 5%;
-      left: 17%;
-      
-    }
-
-    .window_two {
-      top: 40%;
-      left: 10%;
-    }
-
-    .window_three{
-      top: 50%;
-      right: 10%;
-
-    }
-  
-    .note_one {
-      top: 35%;
-      right: 10%;
-    }
-
-    .note_two {
-      top: 40%;
-      right: 20%;
-
-    }
-
-    .note_three {
-      top: 29%;
-      left: 3%;
-    }
-
-    .note_four {
-      top: 37%;
-      left: 3%;
-    }
-  
-    .description {
-      top: 50%;
-      right: 10%;
-    }
+  .window_one {
+    top: 5%;
+    left: 17%;
   }
-  
+
+  .window_two {
+    top: 40%;
+    left: 10%;
+  }
+
+  .window_three {
+    top: 50%;
+    right: 10%;
+  }
+
+  .note_one {
+    top: 35%;
+    right: 10%;
+  }
+
+  .note_two {
+    top: 40%;
+    right: 20%;
+  }
+
+  .note_three {
+    top: 29%;
+    left: 3%;
+  }
+
+  .note_four {
+    top: 37%;
+    left: 3%;
+  }
+
+  .description {
+    top: 50%;
+    right: 10%;
+  }
+}
+
+
+/* Adjustments for tablets */
+@media (max-width: 768px) {
+  .ui-list {
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr)); /* Larger percentage for fewer columns */
+  }
+}
+
+/* Adjustments for mobile devices */
+@media (max-width: 480px) {
+  .ui-details {
+    width: 90vw; /* Wider on smaller screens */
+    top: 5%;
+    right: 5%;
+  }
+
+  .ui-list {
+    grid-template-columns: 1fr; /* Single column layout */
+    gap: 10px; /* Smaller gap */
+  }
+
+  .ui-list img {
+    margin-bottom: 5px; /* Less margin */
+  }
+}

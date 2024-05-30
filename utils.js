@@ -174,3 +174,29 @@ export const scoutLoader = () => {
     });
   }
 };
+
+
+$(document).ready(function() {
+  // Toggle the media-details window on button click
+  $('.media-link-button').click(function() {
+      $('.window.media-details').toggle();
+  });
+
+  // Close the media-details window when clicking the 'x'
+  $('.window.media-details .x').click(function() {
+      $('.window.media-details').hide();
+  });
+
+  // Close the media-details when clicking outside the div
+  $(document).mouseup(function(e) {
+      var container = $(".window.media-details");
+      if (!container.is(e.target) && container.has(e.target).length === 0) {
+          container.hide();
+      }
+  });
+});
+
+$('.media-link-button').click(function() {
+  console.log("Button clicked");
+  $('.window.media-details').toggle();
+});
