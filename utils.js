@@ -4,11 +4,17 @@ const start_menu = ".start_menu";
 const clock = "#showClock";
 const window_one = ".window_one";
 const window_two = ".window_two";
+const window_three = ".window_three";
+const window_four = ".window_four";
 const explorer = ".description";
 const note_one = ".note_one";
 const note_two = ".note_two";
+const note_three = ".note_three"
+const note_four = ".note_four"
 const window_one_x = ".window_one .x";
 const window_two_x = ".window_two .x";
+const window_three_x = ".window_three .x";
+const window_four_x = ".window_four .x";
 const explorer_x = ".description .x";
 const computer = ".computer";
 const contact = ".contact";
@@ -19,8 +25,12 @@ const twitter = ".recycle";
 export const elemArray = [
   window_one,
   window_two,
+  window_three,
+  window_four,
   note_one,
   note_two,
+  note_three,
+  note_four,
   explorer,
   contact,
   computer,
@@ -58,6 +68,14 @@ export const toggleHidden = () => {
     $(window_two).toggleClass("hidden");
   });
 
+  $(window_three_x).on("click tap", () => {
+    $(window_three).toggleClass("hidden");
+  });
+
+
+  $(window_four_x).on("click tap", () => {
+    $(window_four).toggleClass("hidden");
+  });
   $(explorer_x).on("click tap", () => {
     $(explorer).toggleClass("hidden");
   });
@@ -73,6 +91,23 @@ export const toggleHidden = () => {
   $(note_two).on("click tap", () => {
     if ($(window_two).hasClass("hidden")) {
       $(window_two).toggleClass("hidden");
+
+      helpCursor();
+    }
+  });
+
+
+  $(note_three).on("click tap", () => {
+    if ($(window_three).hasClass("hidden")) {
+      $(window_three).toggleClass("hidden");
+
+      helpCursor();
+    }
+  });
+
+  $(note_four).on("click tap", () => {
+    if ($(window_four).hasClass("hidden")) {
+      $(window_four).toggleClass("hidden");
 
       helpCursor();
     }
@@ -139,3 +174,29 @@ export const scoutLoader = () => {
     });
   }
 };
+
+
+$(document).ready(function() {
+  // Toggle the media-details window on button click
+  $('.media-link-button').click(function() {
+      $('.window.media-details').toggle();
+  });
+
+  // Close the media-details window when clicking the 'x'
+  $('.window.media-details .x').click(function() {
+      $('.window.media-details').hide();
+  });
+
+  // Close the media-details when clicking outside the div
+  $(document).mouseup(function(e) {
+      var container = $(".window.media-details");
+      if (!container.is(e.target) && container.has(e.target).length === 0) {
+          container.hide();
+      }
+  });
+});
+
+$('.media-link-button').click(function() {
+  console.log("Button clicked");
+  $('.window.media-details').toggle();
+});

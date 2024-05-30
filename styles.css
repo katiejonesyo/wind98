@@ -1,511 +1,716 @@
 * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    background: url("src/icons/windowsbg.jpeg") repeat fixed;
-    background-color: #008080;
-    background-size: cover;
-    margin: 0;
-    font: normal 13px/1.3;
-    overflow: hidden;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  /* .audio {
-    float: right;
-    position: fixed;
-    right: 2%;
-    top: 2%;
-    height: 25px;
-    width: 300px;
-  }
+  margin: 0;
+  padding: 0;
+}
 
-  audio::-webkit-media-controls-panel {
-    background-color: rgb(192, 192, 192);
-} */
+body.details {
+  background: url("src/photos/Screenshot\ 2024-05-23\ at\ 8.49.41\ PM.png") repeat fixed;
+  background-color: #008080 !important;
+}
 
-  .icons,
-  .note_one,
-  .note_two {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-    cursor: pointer;
-  }
+body.ui {
+  background: url("src/photos/Screenshot\ 2024-05-23\ at\ 8.49.41\ PM.png") repeat fixed;
+  background-color: #008080 !important;
+}
   
-  .icons {
-    width: 100px;
-    float: left;
-    position: fixed;
-    left: 0%;
-    top: 2.5%;
-    z-index: 2;
-  }
+body {
+  background: url("src/icons/windowsbg.jpeg") repeat fixed;
+  background-color: #008080;
+  background-size: cover;
+  margin: 0;
+  font: normal 13px/1.3;
+  overflow: hidden;  /* Ensures the body itself doesn't scroll */
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.icons,
+.note_one,
+.note_two,
+.note_three,
+.note_four {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.icons {
+  width: 100px;
+  float: left;
+  position: fixed;
+  left: 0%;
+  top: 2.5%;
+  z-index: 2;
+}
+
+.my_computer,
+.network_neighborhood,
+.recycle_bin,
+.start_menu,
+.application_icons,
+.start_bar .start_button .logo,
+.start_bar .tray .calendar,
+.start_menu,
+.window .top,
+.window .middle,
+.window .bottom,
+.description .hidden,
+.description .top,
+.description .ok_button,
+.description .bottom {
+  background-image: url("//static.tumblr.com/fpdiq1j/O6Um4f3al/master_sprite.png");
+  margin: auto;
+}
+
+.middle.four {
+  height: 52vh;
+}
+
+.my_computer {
+  height: 32px;
+  width: 32px;
+  background-position: -616px -157px;
+}
+
+.contact_me {
+  height: 32px;
+  width: 32px;
+  background-image: url("src/icons/network.png");
+  margin: auto;
+}
+
+.recycle_bin {
+  height: 32px;
+  width: 30px;
+  background-position: -616px -251px;
+}
+
+.linkedin {
+  height: 32px;
+  width: 32px;
+  background-image: url("src/icons/ie.png");
+  margin: auto;
+}
+
+.github {
+  height: 32px;
+  width: 32px;
+  background-image: url("src/icons/cmd.png");
+  margin: auto;
+}
+
+.note_one,
+.note_two,
+.note_three {
+  width: 70px;
+}
+
+.note_one {
+  position: fixed;
+  right: 10%;
+  top: 50%;
+}
+
+.note_two {
+  position: fixed;
+  right: 19%;
+  top: 35%;
+}
+
+.note_three {
+  position: fixed;
+  left: 13%;
+  top: 2.5%;
+}
+
+.note_four {
+  position: fixed;
+  left: 2.20%;
+  top: 52%;
+}
+
+.notepad_one,
+.notepad_two {
+  height: 32px;
+  width: 32px;
+  background-image: url("src/icons/notepad.png");
+  margin: auto;
+}
+
+.notepad_three {
+  height: 32px;
+  width: 32px;
+  background-image: url("src/icons/directory_open_cabinet_fc-2.png");
+  margin: auto;
+}
+
+.notepad_four {
+  height: 32px;
+  width: 32px;
+  background-image: url("./src/icons/paint_old-0.png");
+  margin: auto;
+}
+
+.intro-list {
+  list-style-type: none;  /* Hide list bullet points */
+}
+
+.project-group ul {
+  list-style: none; /* Remove default bullet points */
+  padding: 10px; /* Remove default padding */
+  display: flex; /* Enable Flexbox */
+  flex-direction: row; /* Arrange items horizontally */
+  justify-content: space-around; /* Distribute space evenly between items */
+  list-style-type: none;  /* Hide list bullet points */
+}
+.project-group li {
+  margin: 10px; /* Optional: Adds some space around each item */
+  display: flex; /* Use Flexbox to center content */
+  flex-direction: column; /* Arrange items in a column */
+  align-items: center; /* Center items horizontally */
+}
+.project-group a {
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Use the default text color */
+  text-align: center; /* Center the text below the image */
+}
+.project-group img {
+  width: 48px; /* Adjust size as needed */
+  height: 48px; /* Adjust size as needed */
+}
+
+.start_bar .start_button .logo {
+  width: 16px;
+  height: 14px;
+  background-position: -633px -103px;
+}
+
+.application_icons {
+  height: 16px;
+  width: 84px;
+  background-position: -565px -69px;
+}
+
+.start_bar .tray .calendar {
+  height: 16px;
+  width: 16px;
+  background-position: -632px -87px;
+}
+
+.start_menu {
+  height: 383px;
+  width: 168px;
+  background-position: 0px 0px;
+}
+
+.window .top {
+  height: 44px;
+  background-position: -168px 0px;
+}
+
+.description .top {
+  height: 21px;
+  background-position: -168px -134px;
+}
+
+.description .ok_button {
+  height: 23px;
+  width: 75px;
+  margin-top: 7px;
+  background-position: -231px -158px;
+  cursor: pointer;
+}
+
+.description .bottom {
+  height: 2px;
+  background-position: -168px -155px;
+}
+
+.window .middle,
+div.notes,
+div.attribution,
+div.tags {
+  background: url("//static.tumblr.com/fpdiq1j/utSm3gwcy/large_middle.png");
+  background-repeat: repeat-y;
+}
+
+.window .bottom {
+  background-position: -168px -46px;
+  height: 22px;
+}
+
+/* Styling for the media details window */
+.window.media-details {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  position: relative;
+}
+
+.window.media-details .x {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+
+.window.media-details .top,
+.window.media-details .bottom {
+  padding: 5px;
+  background-color: #f0f0f0;
+}
+
+.window.media-details .middle {
+  padding: 10px;
+  background-color: #fff;
+}
+
+.media-list {
+  list-style-type: none;
+}
+
+/* Button styling */
+.media-link-button {
+  background: none;
+  border: none;
+  color: blue;
+  cursor: pointer;
+  padding: 5px;
+  text-align: left;
+}
+
+.media-link-button:hover {
+  text-decoration: underline;
+}
+
+.ui-details {
+  background: url(./src/photos/window-png.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 74.9vh;
+  width: 80vw;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  overflow-y: auto; /* Ensures content is scrollable */
+  padding: 20px; /* Adds padding inside the container */
+  box-sizing: border-box; /* Includes padding in width calculation */
+  display: flex; /* Added to center the ui-list vertically and horizontally */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+}
+
+.ui-list {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(40%, 1fr)); /* Responsive columns that adjust number based on available space */
+  gap: 50px;
+  padding: 0;
+  margin: 0;
+  width: 80%; /* 25% smaller in width relative to its parent */
+  height: 75%; /* 25% smaller in height relative to its parent */
+  overflow-y: auto; /* Allows scrolling within the list if content overflows */
+}
+
+.ui-list img {
+  width: 100%; /* Responsive width */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.ui-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+.icon_label {
+  padding-top: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.icons a {
+  text-decoration: none;
+  margin-bottom: 15px;
+}
+
+.title {
+  font-size: 1.25em;
+  margin-bottom: 5px;
+}
+
+img.full_image {
+  width: 100%;
+}
+
+.body img,
+.caption img {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+#desktop,
+.navigation {
+  margin: 20px auto;
+  z-index: 3;
+  position: relative;
+  width: 1000px;
+  width: 480px;
+  left: 10px;
+}
+
+.window,
+.window_one {
+  width: 480px;
+  max-width: 800px;
+  position: fixed;
+  top: 4%;
+  left: 33.5%;
+  cursor: default;
+}
+
+.window_two {
+  position: fixed;
+  top: 37%;
+  left: 60%;
+  cursor: default;
+}
+
+.window_three {
+  position: fixed;
+  top: 30%;
+  left: 14.5%;
+  cursor: default;
+}
+
+.window_four {
+  position: fixed;
+  top: 30%;
+  left: 14.5%;
+  cursor: default;
+}
+
+.window .top {
+  height: 44px;
+}
+
+.window .top .info {
+  top: 26px;
+  left: 10px;
+  position: relative;
+  width: 300px;
+  z-index: 4;
+  font-size: 11px;
+  line-height: 13px;
+}
+
+.window > a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.window .top a:hover {
+  text-decoration: underline;
+}
+
+.window > .x {
+  height: 16px;
+  width: 50px;
+  position: absolute;
+  top: 1.5%;
+  right: 1.5%;
+  cursor: pointer;
+}
+
+.description > .x {
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  top: 2.5%;
+  right: 2.5%;
+  cursor: pointer;
+}
+
+.window .middle,
+div.notes,
+div.attribution,
+div.tags {
+  background-repeat: repeat-y;
+  padding: 4px 26px 4px 10px;
+}
+
+.middle .caption {
+  margin-top: 5px;
+  display: flex;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.description .middle,
+.rc-scout .rc-scout__text {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-direction: column !important;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.window .bottom {
+  height: 22px;
+}
+
+.description {
+  position: fixed;
+  bottom: 44%;
+  right: 23%;
+  z-index: 4;
+  width: 200px;
+}
+
+.description .middle {
+  background: url("//static.tumblr.com/fpdiq1j/leqm4f39j/description_middle.png")
+    repeat-y;
+  padding: 5px;
+  max-width: 800px;
+  font-size: 11px;
+}
+
+.start_bar {
+  position: fixed;
+  background-color: rgb(192, 192, 192);
+  bottom: 0;
+  width: 100%;
+  z-index: 4;
+}
+
+.start_menu {
+  position: fixed;
+  z-index: 3;
+  bottom: 28px;
+  display: none;
+}
+
+.start_bar .top_border {
+  border-bottom: 1px solid rgb(255, 255, 255);
+  border-top: 1px solid rgb(223, 223, 223);
+}
+
+.start_bar .start_button {
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  border-bottom: 2px solid gray;
+  border-right: 2px solid gray;
+  height: 18px;
+  width: 54px;
+  margin: 2px;
+  cursor: pointer;
+}
+
+.start_button > .logo {
+  margin: 1px;
+  min-width: 14px;
+}
+
+.start_button > .text {
+  margin-right: 1px;
+}
+
+.sb_click {
+  border-bottom: 2px solid white !important;
+  border-right: 2px solid white !important;
+  border-top: 2px solid gray !important;
+  border-left: 2px solid gray !important;
+}
+
+.start_bar .start_button .text {
+  float: right;
+  display: inline;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.start_bar .big_separator {
+  float: left;
+  border-left: 1px solid rgb(128, 128, 128);
+  border-right: 1px solid rgb(255, 255, 255);
+  height: 22px;
+  margin-top: 2px;
+  margin-left: 2px;
+}
+
+.start_bar .small_separator {
+  float: left;
+  border-left: 1px solid rgb(255, 255, 255);
+  border-top: 1px solid rgb(255, 255, 255);
+  border-right: 1px solid rgb(128, 128, 128);
+  border-bottom: 1px solid rgb(128, 128, 128);
+  background-color: rgb(192, 192, 192);
+  width: 1px;
+  height: 16px;
+  margin-top: 4px;
+  margin-left: 2px;
+}
+
+.start_bar .application_icons {
+  float: left;
+  margin: 5px;
+}
+
+.start_bar .tray {
+  float: right;
+  border-top: 1px solid rgb(128, 128, 128);
+  border-left: 1px solid rgb(128, 128, 128);
+  border-bottom: 1px solid rgb(255, 255, 255);
+  border-right: 1px solid rgb(255, 255, 255);
+  height: 18px;
+  width: 79px;
+  margin-right: 5px;
+  margin-top: 2px;
+}
+
+.start_bar .tray .time {
+  line-height: 18px;
+  float: right;
+  font-size: 10px;
+  margin-right: 10px;
+}
+
+.start_bar .tray .calendar {
+  float: left;
+  margin-top: 1px;
+  margin-left: 3px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headshot {
+  height: 350px;
+  width: 345px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+
+.loading {
+  cursor: url("src/w98busy.cur"), help;
+}
+
+.no_click {
+  pointer-events: none;
+}
+
+.ui-loader,
+.ui-icon-loading {
+  display: none !important;
+}
+
+.ui-page .ui-page-theme-a .ui-page-active {
+  min-height: fit-content;
+  height: auto;
+}
   
-  .my_computer,
-  .network_neighborhood,
-  .recycle_bin,
-  .start_menu,
-  .application_icons,
-  .start_bar .start_button .logo,
-  .start_bar .tray .calendar,
-  .start_menu,
-  .window .top,
-  .window .middle,
-  .window .bottom,
-  .description .hidden,
-  .description .top,
-  .description .ok_button,
-  .description .bottom {
-    background-image: url("//static.tumblr.com/fpdiq1j/O6Um4f3al/master_sprite.png");
-    margin: auto;
-  }
-  
-  .my_computer {
-    height: 32px;
-    width: 32px;
-    background-position: -616px -157px;
-  }
-  
-  .contact_me {
-    height: 32px;
-    width: 32px;
-    background-image: url("src/icons/network.png");
-    margin: auto;
-  }
-  
-  .recycle_bin {
-    height: 32px;
-    width: 30px;
-    background-position: -616px -251px;
-  }
-  
-  .linkedin {
-    height: 32px;
-    width: 32px;
-    background-image: url("src/icons/ie.png");
-    margin: auto;
-  }
-  
-  .github {
-    height: 32px;
-    width: 32px;
-    background-image: url("src/icons/cmd.png");
-    margin: auto;
-  }
-  
-  .note_one,
-  .note_two {
-    width: 70px;
-  }
-  
-  .note_one {
-    position: fixed;
-    right: 10%;
-    top: 50%;
-  }
-  
-  .note_two {
-    position: fixed;
-    right: 19%;
-    top: 35%;
-  }
-  
-  .notepad_one,
-  .notepad_two {
-    height: 32px;
-    width: 32px;
-    background-image: url("src/icons/notepad.png");
-    margin: auto;
-  }
-  
-  .start_bar .start_button .logo {
-    width: 16px;
-    height: 14px;
-    background-position: -633px -103px;
-  }
-  
-  .application_icons {
-    height: 16px;
-    width: 84px;
-    background-position: -565px -69px;
-  }
-  
-  .start_bar .tray .calendar {
-    height: 16px;
-    width: 16px;
-    background-position: -632px -87px;
-  }
-  
-  .start_menu {
-    height: 383px;
-    width: 168px;
-    background-position: 0px 0px;
-  }
-  
-  .window .top {
-    height: 44px;
-    background-position: -168px 0px;
-  }
-  
-  .description .top {
-    height: 21px;
-    background-position: -168px -134px;
-  }
-  
-  .description .ok_button {
-    height: 23px;
-    width: 75px;
-    margin-top: 7px;
-    background-position: -231px -158px;
-    cursor: pointer;
-  }
-  
-  .description .bottom {
-    height: 2px;
-    background-position: -168px -155px;
-  }
-  
-  .window .middle,
-  div.notes,
-  div.attribution,
-  div.tags {
-    background: url("//static.tumblr.com/fpdiq1j/utSm3gwcy/large_middle.png");
-    background-repeat: repeat-y;
-  }
-  
-  .window .bottom {
-    background-position: -168px -46px;
-    height: 22px;
-  }
-  
-  .icon_label {
-    padding-top: 6px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .icons a {
-    text-decoration: none;
-    margin-bottom: 15px;
-  }
-  
-  .title {
-    font-size: 1.25em;
-    margin-bottom: 5px;
-  }
-  
-  img.full_image {
-    width: 100%;
-  }
-  
-  .body img,
-  .caption img {
-    max-width: 100%;
-    overflow: hidden;
-  }
-  
-  #desktop,
-  .navigation {
-    margin: 20px auto;
-    z-index: 3;
-    position: relative;
-    width: 1000px;
-    width: 480px;
-    left: 10px;
-  }
-  
-  .window,
+.div_container {
+  width: 3vw;
+  height: 3vh;
+}
+
+
+@media only screen and (max-width: 500px) {
+
   .window_one {
-    width: 480px;
-    max-width: 480px;
-    position: fixed;
-    top: 4%;
-    left: 33.5%;
-    cursor: default;
+    top: 5%;
+    left: 17%;
   }
-  
+
   .window_two {
-    position: fixed;
     top: 40%;
-    left: 14.5%;
-    cursor: default;
+    left: 10%;
+  }
 
+  .window_three {
+    top: 50%;
+    right: 10%;
   }
-  
-  .window .top {
-    height: 44px;
+
+  .note_one {
+    top: 35%;
+    right: 10%;
   }
-  
-  .window .top .info {
-    top: 26px;
-    left: 10px;
-    position: relative;
-    width: 300px;
-    z-index: 4;
-    font-size: 11px;
-    line-height: 13px;
+
+  .note_two {
+    top: 40%;
+    right: 20%;
   }
-  
-  .window > a {
-    color: #000000;
-    text-decoration: none;
+
+  .note_three {
+    top: 29%;
+    left: 3%;
   }
-  
-  .window .top a:hover {
-    text-decoration: underline;
+
+  .note_four {
+    top: 37%;
+    left: 3%;
   }
-  
-  .window > .x {
-    height: 16px;
-    width: 50px;
-    position: absolute;
-    top: 1.5%;
-    right: 1.5%;
-    cursor: pointer;
-  }
-  
-  .description > .x {
-    height: 16px;
-    width: 16px;
-    position: absolute;
-    top: 2.5%;
-    right: 2.5%;
-    cursor: pointer;
-  }
-  
-  .window .middle,
-  div.notes,
-  div.attribution,
-  div.tags {
-    background-repeat: repeat-y;
-    padding: 4px 26px 4px 10px;
-  }
-  
-  .middle .caption {
-    margin-top: 5px;
-    display: flex;
-  }
-  
-  .wrapper {
-    display: flex;
-  }
-  
-  .description .middle,
-  .rc-scout .rc-scout__text {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    flex-direction: column !important;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-  
-  .window .bottom {
-    height: 22px;
-  }
-  
+
   .description {
-    position: fixed;
-    bottom: 44%;
-    right: 23%;
-    z-index: 4;
-    width: 200px;
+    top: 50%;
+    right: 10%;
   }
-  
-  .description .middle {
-    background: url("//static.tumblr.com/fpdiq1j/leqm4f39j/description_middle.png")
-      repeat-y;
-    padding: 5px;
-    max-width: 190px;
-    font-size: 11px;
+}
+
+
+/* Adjustments for tablets */
+@media (max-width: 768px) {
+  .ui-list {
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr)); /* Larger percentage for fewer columns */
   }
-  
-  .start_bar {
-    position: fixed;
-    background-color: rgb(192, 192, 192);
-    bottom: 0;
-    width: 100%;
-    z-index: 4;
-  }
-  
-  .start_menu {
-    position: fixed;
-    z-index: 3;
-    bottom: 28px;
-    display: none;
-  }
-  
-  .start_bar .top_border {
-    border-bottom: 1px solid rgb(255, 255, 255);
-    border-top: 1px solid rgb(223, 223, 223);
-  }
-  
-  .start_bar .start_button {
-    float: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-top: 2px solid white;
-    border-left: 2px solid white;
-    border-bottom: 2px solid gray;
-    border-right: 2px solid gray;
-    height: 18px;
-    width: 54px;
-    margin: 2px;
-    cursor: pointer;
-  }
-  
-  .start_button > .logo {
-    margin: 1px;
-    min-width: 14px;
-  }
-  
-  .start_button > .text {
-    margin-right: 1px;
-  }
-  
-  .sb_click {
-    border-bottom: 2px solid white !important;
-    border-right: 2px solid white !important;
-    border-top: 2px solid gray !important;
-    border-left: 2px solid gray !important;
-  }
-  
-  .start_bar .start_button .text {
-    float: right;
-    display: inline;
-    line-height: 18px;
-    font-weight: bold;
-  }
-  
-  .start_bar .big_separator {
-    float: left;
-    border-left: 1px solid rgb(128, 128, 128);
-    border-right: 1px solid rgb(255, 255, 255);
-    height: 22px;
-    margin-top: 2px;
-    margin-left: 2px;
-  }
-  
-  .start_bar .small_separator {
-    float: left;
-    border-left: 1px solid rgb(255, 255, 255);
-    border-top: 1px solid rgb(255, 255, 255);
-    border-right: 1px solid rgb(128, 128, 128);
-    border-bottom: 1px solid rgb(128, 128, 128);
-    background-color: rgb(192, 192, 192);
-    width: 1px;
-    height: 16px;
-    margin-top: 4px;
-    margin-left: 2px;
-  }
-  
-  .start_bar .application_icons {
-    float: left;
-    margin: 5px;
-  }
-  
-  .start_bar .tray {
-    float: right;
-    border-top: 1px solid rgb(128, 128, 128);
-    border-left: 1px solid rgb(128, 128, 128);
-    border-bottom: 1px solid rgb(255, 255, 255);
-    border-right: 1px solid rgb(255, 255, 255);
-    height: 18px;
-    width: 79px;
-    margin-right: 5px;
-    margin-top: 2px;
-  }
-  
-  .start_bar .tray .time {
-    line-height: 18px;
-    float: right;
-    font-size: 10px;
-    margin-right: 10px;
-  }
-  
-  .start_bar .tray .calendar {
-    float: left;
-    margin-top: 1px;
-    margin-left: 3px;
-  }
-  
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+/* Adjustments for mobile devices */
+@media (max-width: 480px) {
+  .ui-details {
+    width: 90vw; /* Wider on smaller screens */
+    top: 5%;
+    right: 5%;
   }
 
-  .headshot {
-    height: 350px;
-    width: 345px;
+  .ui-list {
+    grid-template-columns: 1fr; /* Single column layout */
+    gap: 10px; /* Smaller gap */
   }
 
-  
-  .hidden {
-    display: none !important;
+  .ui-list img {
+    margin-bottom: 5px; /* Less margin */
   }
-  
-  .loading {
-    cursor: url("src/w98busy.cur"), help;
-  }
-  
-  .no_click {
-    pointer-events: none;
-  }
-  
-  .ui-loader,
-  .ui-icon-loading {
-    display: none !important;
-  }
-  
-  .ui-page .ui-page-theme-a .ui-page-active {
-    min-height: fit-content;
-    height: auto;
-  }
-  
-  @media only screen and (max-width: 500px) {
-    .window_two,
-    .note_two {
-      top: 50%;
-      right: 10%;
-
-    }
-  
-    .window_one {
-      top: 5%;
-      left: 27.5%;
-    }
-  
-    .window_one .middle > div {
-      width: 250px;
-      text-overflow: clip;
-    }
-  
-    .note_one {
-      top: 70%;
-      right: 10%;
-    }
-  
-    .description {
-      top: 50%;
-      right: 10%;
-    }
-  }
-  
+}
