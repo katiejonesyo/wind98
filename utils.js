@@ -9,8 +9,9 @@ const window_four = ".window_four";
 const explorer = ".description";
 const note_one = ".note_one";
 const note_two = ".note_two";
-const note_three = ".note_three"
-const note_four = ".note_four"
+const note_three = ".note_three";
+const portfolio = ".portfolio";
+const note_four = ".note_four";
 const window_one_x = ".window_one .x";
 const window_two_x = ".window_two .x";
 const window_three_x = ".window_three .x";
@@ -97,7 +98,7 @@ export const toggleHidden = () => {
   });
 
 
-  $(note_three).on("click tap", () => {
+  $(portfolio).on("click tap", () => {
     if ($(window_three).hasClass("hidden")) {
       $(window_three).toggleClass("hidden");
 
