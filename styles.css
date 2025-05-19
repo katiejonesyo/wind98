@@ -30,7 +30,6 @@ a:hover {
   text-decoration: underline;
 }
 
-.icons,
 .note_one,
 .note_two,
 .note_three,
@@ -43,13 +42,7 @@ a:hover {
   cursor: pointer;
 }
 
-.icons {
-  width: 100px;
-  float: left;
-  position: fixed;
-  left: 0%;
-  top: 2.5%;
-}
+
 
 .my_computer,
 .network_neighborhood,
@@ -86,34 +79,49 @@ a:hover {
   background-position: -616px -157px;
 }
 
-.contact_me {
-  height: 32px;
-  width: 32px;
-  background-image: url("src/icons/network.png");
-  margin: auto;
-}
-
 .recycle_bin {
   height: 32px;
   width: 30px;
   background-position: -616px -251px;
 }
 
-.linkedin {
-  height: 32px;
-  width: 32px;
-  background-image: url("src/photos/linkedin.png");
-  background-size: cover;
-  margin: auto;
+.icons {
+  position: fixed;
+  top: 2.5%;
+  left: 0%;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 9999;
 }
 
+.icon-block {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.icon-link {
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
 
-.github {
-  height: 32px;
+.icon-img {
   width: 32px;
-  background-image: url("src/icons/cmd.png");
-  margin: auto;
+  height: 32px;
+  image-rendering: pixelated; /* optional retro crispness */
+}
+
+.icon_label {
+  font-size: 12px;
+  color: black;
+  margin-top: 6px;
 }
 
 .note_one,
@@ -247,10 +255,6 @@ div.tags {
   height: 300px; 
 }
 
-.icons a,
-.icons div {
-  pointer-events: auto !important;
-}
 
 
 
@@ -303,18 +307,7 @@ div.tags {
 .media-link-button:hover {
   text-decoration: underline;
 }
-.icon_label {
-  padding-top: 6px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
 
-.icons a {
-  text-decoration: none;
-  margin-bottom: 15px;
-}
 
 .title {
   font-size: 1.25em;
@@ -587,10 +580,6 @@ img.full_image {
 }
 
 
-.loading {
-  cursor: url("src/w98busy.cur"), help;
-}
-
 .no_click {
   pointer-events: none;
 }
@@ -675,4 +664,5 @@ img.full_image {
   .ui-list img {
     margin-bottom: 5px; /* Less margin */
   }
+
 }

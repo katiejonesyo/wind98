@@ -137,7 +137,10 @@ export const openPopup = () => {
 export const closePopup = () => {
   $(ok).on("pointerup", () => {
     console.log("OK clicked");
-    $(".description").css("display", "none");
+    $(".description").css({
+      display: "none",
+      zIndex: 1
+    });
   });
 };
 
