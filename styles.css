@@ -49,7 +49,6 @@ a:hover {
   position: fixed;
   left: 0%;
   top: 2.5%;
-  z-index: 2;
 }
 
 .my_computer,
@@ -69,6 +68,12 @@ a:hover {
   background-image: url("//static.tumblr.com/fpdiq1j/O6Um4f3al/master_sprite.png");
   margin: auto;
   overflow: scroll; 
+}
+
+.ok_button {
+  pointer-events: auto !important;
+  z-index: 9999 !important;
+  position: relative;
 }
 
 .middle.four {
@@ -240,6 +245,11 @@ div.tags {
   padding: 10px 26px 15px 15px;
   overflow-y: auto;
   height: 300px; 
+}
+
+.icons a,
+.icons div {
+  pointer-events: auto !important;
 }
 
 

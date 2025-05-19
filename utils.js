@@ -61,59 +61,55 @@ export const makeDraggable = (elemArray) => {
 };
 
 export const toggleHidden = () => {
-  $(window_one_x).on("click tap", () => {
+  $(window_one_x).on("pointerup", () => {
     $(window_one).toggleClass("hidden");
   });
 
-  $(window_two_x).on("click tap", () => {
+  $(window_two_x).on("pointerup", () => {
     $(window_two).toggleClass("hidden");
   });
 
-  $(window_three_x).on("click tap", () => {
+  $(window_three_x).on("pointerup", () => {
     $(window_three).toggleClass("hidden");
   });
 
-
-  $(window_four_x).on("click tap", () => {
+  $(window_four_x).on("pointerup", () => {
     $(window_four).toggleClass("hidden");
   });
-  $(explorer_x).on("click tap", () => {
+
+  $(explorer_x).on("pointerup", () => {
     $(explorer).toggleClass("hidden");
   });
 
-  $(note_one).on("click tap", () => {
+  $(note_one).on("pointerup", () => {
     if ($(window_one).hasClass("hidden")) {
       $(window_one).toggleClass("hidden");
-
       helpCursor();
     }
   });
 
-  $(note_two).on("click tap", () => {
+  $(note_two).on("pointerup", () => {
     if ($(window_two).hasClass("hidden")) {
       $(window_two).toggleClass("hidden");
-
       helpCursor();
     }
   });
 
-
-  $(portfolio).on("click tap", () => {
+  $(portfolio).on("pointerup", () => {
     if ($(window_three).hasClass("hidden")) {
       $(window_three).toggleClass("hidden");
-
       helpCursor();
     }
   });
 
-  $(note_four).on("click tap", () => {
+  $(note_four).on("pointerup", () => {
     if ($(window_four).hasClass("hidden")) {
       $(window_four).toggleClass("hidden");
-
       helpCursor();
     }
   });
 };
+
 
 export const toggleStart = () => {
   $(start_button).on("click", (e) => {
@@ -137,11 +133,14 @@ export const openPopup = () => {
   $(explorer).fadeIn().toggleClass("hidden");
 };
 
+
 export const closePopup = () => {
-  $(ok).on("click tap", () => {
-    $(explorer).fadeOut();
+  $(ok).on("pointerup", () => {
+    console.log("OK clicked");
+    $(".description").css("display", "none");
   });
 };
+
 
 export const updateClock = () => {
   const date = new Date();
