@@ -618,6 +618,7 @@ img.full_image {
     width: 20em;
   }
 
+
   .window_two {
     top: 40%;
     left: 10%;
@@ -647,6 +648,10 @@ img.full_image {
   .description {
     bottom: 20%;
     right: 10%;
+  }
+
+  .popup-context {
+    font-size: small;
   }
 }
 
