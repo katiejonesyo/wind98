@@ -3,11 +3,6 @@
   padding: 0;
 }
 
-.note_three {
-  background-color: red;
-  z-index: 10;
-}
-
 body.details {
   background: url("src/photos/Screenshot\ 2024-05-23\ at\ 8.49.41\ PM.png") repeat fixed;
   background-color: #008080 !important;
@@ -147,7 +142,7 @@ a:hover {
   margin: auto;
 }
 
-.notepad_three {
+.portfolio {
   height: 32px;
   width: 32px;
   background-image: url("src/icons/directory_open_cabinet_fc-2.png");
