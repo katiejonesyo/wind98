@@ -13,7 +13,6 @@ const note_three = ".note_three";
 const portfolio = ".portfolio";
 const note_four = ".note_four";
 const window_one_x = ".window_one .x";
-const window_two_x = ".window_two .x";
 const window_three_x = ".window_three .x";
 const window_four_x = ".window_four .x";
 const explorer_x = ".description .x";
@@ -65,10 +64,6 @@ export const toggleHidden = () => {
     $(window_one).toggleClass("hidden");
   });
 
-  $(window_two_x).on("pointerup", () => {
-    $(window_two).toggleClass("hidden");
-  });
-
   $(window_three_x).on("pointerup", () => {
     $(window_three).toggleClass("hidden");
   });
@@ -87,14 +82,8 @@ export const toggleHidden = () => {
       helpCursor();
     }
   });
-
-  $(note_two).on("pointerup", () => {
-    if ($(window_two).hasClass("hidden")) {
-      $(window_two).toggleClass("hidden");
-      helpCursor();
-    }
-  });
-
+  
+  
   $(portfolio).on("pointerup", () => {
     if ($(window_three).hasClass("hidden")) {
       $(window_three).toggleClass("hidden");

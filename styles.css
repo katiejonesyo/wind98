@@ -124,6 +124,9 @@ a:hover {
   margin-top: 6px;
 }
 
+
+
+
 .note_one,
 .note_two{
   width: 70px;
@@ -133,12 +136,15 @@ a:hover {
   position: fixed;
   right: 10%;
   top: 50%;
+  text-align: center;
 }
 
 .note_two {
   position: fixed;
   right: 19%;
   top: 35%;
+  z-index: 99999 !important;
+  transform: none !important;
 }
 
 .note_four {
@@ -584,6 +590,9 @@ img.full_image {
   pointer-events: none;
 }
 
+.note_two.no_click {
+  pointer-events: auto !important;
+} 
 .ui-loader,
 .ui-icon-loading {
   display: none !important;
@@ -627,6 +636,7 @@ img.full_image {
   .note_two {
     top: 50%;
     left: 5%;
+    z-index: 9999;
   }
 
   .note_four {
